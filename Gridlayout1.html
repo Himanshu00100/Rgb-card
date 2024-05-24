@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 1</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        div.wrapper1{
+            width:100vw;
+            height:100vh;
+            /* border:2px solid red; */
+            padding:15vh 15vh;
+            background-color:#343a40;
+        }
+        div.wrapper2{
+            display:flex;
+            width:100%;
+            height:100%;
+            /* border:2px solid blue; */
+        }
+        div.left{
+            display:flex;
+            flex-direction:column;
+            width:33.33%;
+            height:100%;
+            padding:0vh 1vh 0vh 0vh;
+            /* border:2px solid red; */
+        }
+        div.bg1{
+            background-image:url("cory-billingsley-PQ36AkKJfAc-unsplash.jpg");
+            width:100%;
+            height:50%;
+            background-position:center;
+            background-size:cover;
+        }
+        div.leftcontent{
+            background-color:black;
+            width:100%;
+            height:50%;
+        }
+        div.bg2{
+            width:100%;
+            height:50%;
+            background-image:url("pablo-gentile-3MYvgsH1uK0-unsplash.jpg");
+            background-position:center;
+            background-size:cover;
+        }
+        div.middlecontent{
+            width:100%;
+            height:50%;
+            background-color:black;
+        }
+        div.bg3{
+            background-image:url("nick-fewings-faKvebx79FA-unsplash.jpg");
+            width:100%;
+            height:50%;
+            background-position:center;
+            background-size:cover;
+        }
+        div.rightcontent{
+            width:100%;
+            height:50%;
+            background-color:black;
+        }
+        div.middle{
+            display:flex;
+            flex-direction:column;
+            width:33.33%;
+            height:100%;
+            padding:0vh 1vh 0vh 1vh;
+            /* border:2px solid red; */
+        }
+        div.right{
+            display:flex;
+            flex-direction:column;
+            width:33.33%;
+            height:100%;
+            padding:0vh 0vh 0vh 1vh;
+            /* border:2px solid red; */
+        }
+        h2.leftcontent{
+            color:red;
+            font-family:sans-serif;
+            text-shadow:0px 0px 10px red;
+        }
+        p.leftcontent{
+            color:red;
+            text-shadow:0px 0px 10px red;
+            line-height:20px;
+            padding-top:20px;
+        }
+        h2.middlecontent{
+            color:red;
+            font-family:sans-serif;
+            text-shadow:0px 0px 5px red;
+        }
+        p.middlecontent{
+            color:red;
+            text-shadow:0px 0px 10px red;
+            padding-top:20px;
+        }
+        h2.rightcontent{
+            color:red;
+            font-family:sans-serif;
+            text-shadow:0px 0px 10px red;
+        }
+        p.rightcontent{
+            color:red;
+            text-shadow:0px 0px 10px red;
+            line-height:20px;
+            padding-top:20px;
+        }
+        div.leftcontent{
+            padding:3vh 0vh 0vh 5vh;
+        }
+        div.middlecontent{
+            padding:3vh 0vh 0vh 5vh;
+        }
+        div.rightcontent{
+            padding:3vh 0vh 0vh 5vh;
+        }
+        div.btn1{
+            width:150px;
+            color:red;
+            margin:10px;
+            font-weight:bold;
+            text-align:center;
+            padding:10px;
+            margin:30px;
+            border-radius:50%;
+            border-bottom:3px solid red;
+        }
+        div.btn2{
+            width:150px;
+            color:red;
+            margin:10px;
+            font-weight:bold;
+            text-align:center;
+            padding:10px;
+            border-radius:50%;
+            margin:30px;
+            border-bottom:3px solid red;
+        }
+        div.btn3{
+            
+            width:150px;
+            color:red;
+            margin:30px;
+            font-weight:bold;
+            text-align:center;
+            padding:10px;
+            border-radius:50%;
+            border-bottom:3px solid red;
+
+        }
+        div.btn{
+            transition:0.1s all linear;
+        }
+        div.btn1:hover{
+            text-shadow:0px 3px 20px red;
+            box-shadow:0px 0px 15px red;
+            font-size:1.2rem;
+            /* border-radius:0%;
+            border-bottom:0px;
+            padding:0px; */
+            padding:15px;
+            text-decoration:underline;
+        }
+        div.btn2:hover{
+            text-shadow:0px 3px 20px red;
+            box-shadow:0px 0px 15px red;
+            font-size:1.2rem;
+            text-decoration:underline;
+            padding:15px;
+        }
+        div.btn3:hover{
+            text-shadow:0px 3px 20px red;
+            box-shadow:0px 0px 15px red;
+            font-size:1.2rem;
+            text-decoration:underline;
+            padding:15px;
+        }
+        div.rgbbg{
+            animation:rgb 4s linear infinite forwards;
+        }
+        @keyframes rgb{
+            from{
+                filter:hue-rotate(0deg);
+            }
+            to{
+                filter:hue-rotate(360deg);
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="wrapper1">
+        <div class="wrapper2">
+            <div class="left rgbbg">
+                <div class="bg1"></div>
+                <div class="leftcontent">
+                    <h2 class="leftcontent h2">THE WORLD ENDED <br> YESTERDAY</h2>
+                    <p class="leftcontent p2">I don't need to compromise my principles, <br>because they don't have the slightest <br>bearing on what happens to me anyway.</p>
+                    <div class="btn1 btn">READ MORE</div>
+
+                </div>
+
+            </div>
+            <div class="middle rgbbg">
+                <div class="bg2"></div>
+                <div class="middlecontent">
+                    <h2 class="middlecontent h2">AN ABSTRACT POST <br> HEADING</h2>
+                    <p class="middlecontent p2">Sometimes the surest sign that intelligent <br>life exists elsewhere where the universe is that <br> none of it has tried to contact us.</p>
+                    <div class=" btn2 btn">READ MORE</div>
+                </div>
+            </div>
+            <div class="right rgbbg">
+                <div class="bg3">
+
+                </div>
+                <div class="rightcontent">
+                    <h2 class="rightcontent h2">DOWN WITH THIS SORT OF <br> THING</h2>
+                    <p class="rightcontent p2">I don't need to comprimise my principles. <br>  because they don't have the slightest <br> bearing opn whatbhappens to me anyway.</p>
+                    <div class="btn3 btn">READ MORE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
